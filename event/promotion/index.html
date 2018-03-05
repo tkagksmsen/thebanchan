@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex, nofollow">
+
+
+<meta property="og:image" content="http://image.thebanchan.co.kr/upload/C00001/dspl/banner/2010/599/00/170800000005599.jpg" />
+<meta property="og:title" content="남도위크" />
+<meta property="og:description" content="http://www.thebanchan.co.kr/event/initEventDetail.action?event_no=E170801983" />
+<meta property="og:url" content="http://www.thebanchan.co.kr/event/initEventDetail.action?event_no=E170801983" />
+<meta property="og:type" content="website"/>
+
+<title>쿠폰&amp;이벤트 | theBanchan</title>
+	<link rel="shortcut icon" href="http://www.thebanchan.co.kr/fo/images/common/favicon.ico?v=2" type="image/x-icon">
+	<link rel="icon" href="http://www.thebanchan.co.kr/fo/images/common/favicon.ico?v=2" type="image/x-icon">
+	<link rel="stylesheet" href="http://www.thebanchan.co.kr/fo/css/common.css?v=170928.1" type="text/css">	
+	
+	<script type="text/javascript" src="http://www.thebanchan.co.kr/common/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="http://www.thebanchan.co.kr/fo/js/jquery.plugin.js"></script>
+	
+	<script type="text/javascript">
+	    var lockLogin = false;
+	    var lockLoginPop = false;
+	    var isTraker = true; // 풋터 트레커사용여부
+	    
+		if ($.type(window.overpass) != "object") {
+			window.overpass = {};
+		};
+		if ($.type(window.overpass.global) != "object") {
+			window.overpass.global = {};
+		};
+		overpass.global = {
+			scheme             : "http",
+			chnl_cd            : "10",
+			js_path            : "http://www.thebanchan.co.kr/fo",
+			image_path         : "http://www.thebanchan.co.kr/fo",
+			cookie_domain      : ".thebanchan.co.kr",
+			base_domain_url    : "http://www.thebanchan.co.kr",
+			min_ord_price	   : "10000"
+		};
+	</script>
+
+	<script type="text/javascript" src="http://www.thebanchan.co.kr/common/js/overpass.common.js?v=170928.1"></script>
+	<script type="text/javascript" src="http://www.thebanchan.co.kr/common/js/overpass.fn.js?v=170928.1"></script>
+	<script type="text/javascript" src="http://www.thebanchan.co.kr/common/js/overpass.delihopedate.js?v=170928.1"></script>
+	<script type="text/javascript" src="http://www.thebanchan.co.kr/common/js/overpass.login.base.js?v=170928.1"></script>
+	<script type="text/javascript" src="http://www.thebanchan.co.kr/common/js/overpass.member.js?v=170928.1"></script>
+	<script type="text/javascript" src="http://www.thebanchan.co.kr/fo/js/overpass.fo.js?v=170928.1"></script>	
+	<script type="text/javascript" src="http://www.thebanchan.co.kr/fo/js/overpass.popup.js?v=170928.1"></script>
+	<script type="text/javascript" src="http://www.thebanchan.co.kr/fo/js/overpass.login.js?v=170928.1"></script>	
+	<script type="text/javascript" src="http://www.thebanchan.co.kr/fo/js/ds.appinterface.dongwon.js?v=170928.1"></script>	<!--  APP 스킴용 -->
+
+</head>
+<body>
+
+<!-- ACCESSIBILITY -->
+<div id="accessibility" class="accessibility">
+	<dl>
+		<dt class="ir"><strong>바로가기 메뉴</strong></dt>
+		<dd><a href="#content">본문 바로가기</a></dd>
+		<dd><a href="#header">메인메뉴 바로가기</a></dd>
+		<dd><a href="#footer">하단메뉴 바로가기</a></dd>
+	</dl>
+</div>
+<!-- //ACCESSIBILITY -->
+
+<!-- HEADER -->
+<div id="header" class="header">
+	<div class="hd_top">
+		<div class="ctr_box">
+			<h1><a href="javascript:void(0);"><span class="ir">theBanchan</span></a></h1>
+			<div class="top">
+				<a href="javascript:void(0);" class="favo">즐겨찾기<em class="ir">설정하기</em></a>
+				<a href="javascript:void(0);" class="app" onclick="BlockUI('lyr_sp_app');return false;">앱다운로드<em class="ir">더반찬 쇼핑앱 레이어 열기</em></a>
+				<dl id="headerMenu">
+					<dt class="ir">마이메뉴</dt>
+				
+					<dd><a id="head_login_a" href="javascript:overpass.isLogin();">로그인</a></dd>
+					<dd><a id="head_login_b" href="javascript:overpass.link('JOIN');">회원가입</a></dd>
+				
+					<dd><a href="javascript:overpass.link('CART');">장바구니</a></dd>
+					<dd><a href="javascript:overpass.link('ORDER');">MY더반찬</a></dd>
+					<dd><a href="javascript:overpass.link('CUSTCENTER');">고객센터</a></dd>
+					<dd><a href="javascript:overpass.link('DAWNDELI');">새벽배송 검색</a></dd>
+					<dd><a href="javascript:overpass.link('GIFT');">상품권 등록</a></dd>
+				</dl>
+			</div>
+			<div class="btm">
+				<div class="sch">
+					<label for="hd_sch" class="ir">검색어 입력</label>
+					<input id="hd_sch" class="sch_input" type="text" />
+					<div class="key">
+					</div>
+					<button class="sch_bt" type="button"><em class="ir">검색하기</em></button>
+				</div>
+				<dl class="pmb">
+					<dt class="ir">프로모션 메뉴</dt>
+					<dd><a href="javascript:void(0);">리얼 생생후기</a></dd>
+					<dd class="tv"><a href="javascript:void(0);">더반찬TV<em class="ir">TV</em></a></dd>
+					<dd class="evt"><a href="javascript:void(0);">쿠폰/이벤트</a></dd>
+					<dd><a href="javascript:void(0);">더반찬가이드</a></dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+	<div class="hd_btm">
+		<div class="ctr_box">
+			<div class="ctg_all">
+				<button type="button" class="open" onClick="overpass.dispctg.goThemaList();return false;"><span>맞춤추천테마관<em class="ir">레이어 열기</em></span></button>
+				<div class="lyr bnr">
+					<div class="bx">
+						<h4 class="ir">전체카테고리 레이어</h4>
+                            <div class="thm">
+                                <dl>
+                                    <dt class="n1">
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1802003292'});">이럴땐 이 세트!</a>
+                                    </dt>
+                                    <dd>
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1802003302'});">생일상</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1802003303'});">집들이</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1802003304'});">차례상</a>
+                                    </dd>
+                                </dl>
+
+                                <dl>
+                                    <dt class="n2">
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1707080328'});">재료별</a>    
+                                    </dt>
+                                    <dd>
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1707080347'});">육류</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1707080348'});">채소/과일</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1707080349'});">버섯/나물류</a>
+                                    </dd>
+                                </dl>
+
+                                <dl>
+                                    <dt class="n3">
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1707080329'});">나라별</a>
+                                    </dt>
+                                    <dd>
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1707080358'});">양식/동남아/퓨전</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1707080357'});">중식/일식</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1707080356'});">한식</a>
+                                    </dd>
+                                </dl>
+
+                                <dl>
+                                    <dt class="n4">
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1707080330'});">조리방법별</a>
+                                    </dt>
+                                    <dd>
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1707080362'});">데울필요없어요</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1707080361'});">간단조리(데우기)</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1707080360'});">반조리메뉴</a>
+                                    </dd>
+                                </dl>
+
+                                <dl>
+                                    <dt class="n5">
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1707080331'});">맛/식감</a>
+                                    </dt>
+                                    <dd>
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1801003270'});">바삭바삭</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1801003269'});">중독적인 매운맛</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1707080368'});">색다른 맛</a>
+                                    </dd>
+                                </dl>
+
+                                <dl>
+                                    <dt class="n6"><a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1707080332'});">싱글족</a></dt>
+                                    <dd>
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1707080371'});">싱글 버전 반찬</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1707080370'});">우아한 혼밥</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1707080369'});">간단한 한끼</a>
+                                    </dd>
+		    					</dl>
+
+	    						<dl>
+    								<dt class="n7"><a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1707080333'});">소가족</a></dt>
+                                    <dd>
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1707080376'});">오래오래두고먹자</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1707080374'});">간식</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1707080373'});">간단 밥상</a>
+                                    </dd>
+							    </dl>
+
+							    <dl>
+								    <dt class="n8">
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1707080334'});">건강남녀</a>
+                                    </dt>
+                                    <dd>
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1801003272'});">건강한 한끼</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1707080379'});">샐러드</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="javascript:void(0);" onclick="overpass.link('THEMA', {disp_ctg_no :'1707080378'});">저염식</a>
+                                    </dd>
+							    </dl>
+                            </div>
+
+							<div class="right_bn">
+								<a href="javascript:void(0);" onclick="overpass.tracking.link({ openwinyn:'N', tr_yn:'Y', banner_kind_cd:'90', conts_form_cd:'130', conts_form_dtl_cd:'13099', conts_divi_cd:'', conts_dist_no:'', sale_area_no:'D1704000673', rel_divi_cd:'20', rel_no:'180200000006403', move_cont_no:'', url:'https://goo.gl/fMCuYH', param:''});">
+                                    <img src="http://image.thebanchan.co.kr/upload/C00001/dspl/banner/90/839/00/180200000006839.jpg?v=20180223175825" width="182" height="375" class="" alt="GNB우측배너_인스프링"/>
+                                </a>
+							</div>
+
+					</div>
+				</div>
+			</div>
+			<dl class="disp">
+				<dt class="ir">전시메뉴</dt>
+				<dd><a href="javascript:void(0);" onclick="overpass.link('7DAY')"><span>7데이세트</span></a></dd>
+				
+
+				<dd><a href="javascript:void(0);" onclick="overpass.dispctg.goDispList({disp_ctg_no : '1707080300'})"><span>국</span></a></dd>
+
+				<dd><a href="javascript:void(0);" onclick="overpass.dispctg.goDispList({disp_ctg_no : '1707080301'})"><span>반찬</span></a></dd>
+
+				<dd><a href="javascript:void(0);" onclick="overpass.dispctg.goDispList({disp_ctg_no : '1707080302'})"><span>메인요리</span></a></dd>
+
+				<dd><a href="javascript:void(0);" onclick="overpass.dispctg.goDispList({disp_ctg_no : '1707080303'})"><span>샐러드바</span></a></dd>
+
+				<dd><a href="javascript:void(0);" onclick="overpass.dispctg.goDispList({disp_ctg_no : '1707080304'})"><span>키즈</span></a></dd>
+
+				<dd><a href="javascript:void(0);" onclick="overpass.link('BRAND',{brand_no : '1700002615'})"><span>건강식</span></a></dd>
+
+			</dl>
+			<dl class="disp">
+				<dt class="ir">전시메뉴</dt>
+				<dd><a href="javascript:void(0);" onclick="overpass.link('NEW')"><span>NEW</span></a></dd>
+				<dd><a href="javascript:void(0);" onclick="overpass.link('SIGT')"><span>시그니처</span></a></dd>
+				
+			</dl>
+			<div id="gnb_bn" class="gnb_bn">
+				<a href="javascript:void(0);" onclick="overpass.tracking.link({ openwinyn:'N', tr_yn:'Y', banner_kind_cd:'90', conts_form_cd:'130', conts_form_dtl_cd:'13010', conts_divi_cd:'', conts_dist_no:'', sale_area_no:'D1706000831', rel_divi_cd:'20', rel_no:'180100000006164', move_cont_no:'', url:'/dispctg/initThema.action?target=_self&disp_ctg_no=1802003292', param:''});">
+                    <img src="http://image.thebanchan.co.kr/upload/C00001/dspl/banner/90/523/00/180100000006523.jpg?v=20180301020109" width="221" height="46" class="" alt="GNB우측배너_키즈신제품"/>
+                </a>
+			</div>
+		</div>
+	</div>
+</div>
+<!--// HEADER -->
+    <link rel="stylesheet" href="http://www.thebanchan.co.kr/fo/css/disp.css" type="text/css">
+    <script type="text/javascript" src="http://www.thebanchan.co.kr/fo/js/overpass.event.js"></script>
+    <script type="text/javascript" src="http://www.thebanchan.co.kr/common/js/overpass.event.base.js"></script>		
+    <script type="text/javascript" src="http://www.thebanchan.co.kr/common/js/kakao.min.js"></script>
+    <script type="text/javascript" src="http://www.thebanchan.co.kr/common/js/overpass.sns.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //SNS공유하기
+            fnCallSNSShare = function(sns_cd){
+                overpass.sns.sharePage({
+                    sns: sns_cd,
+                    title: "더반찬 이벤트 - 남도위크",
+                    url: window.location.href,
+                    type: "event"
+                });
+            }
+            
+            fnEventEntry = function(obj, _callback){
+                var $obj = $(obj);
+                var $form = $obj.parents("form[id^=eventForm_]");
+                var pin = {
+                        form : $form,
+                        _callback : _callback
+                }
+                var eventEntry = function(p){
+                    overpass.eventDetail.fnEventEntry(p);	
+                }
+                overpass.isLogin({login: function(){ eventEntry(pin); } });
+            }
+        });
+    </script>
+    <!-- CONTENT -->
+    <div id="content" class="content">
+    </div>
+    <!-- //CONTENT -->
+
+    <script>
+    $(document).ready(function(){
+        overpass.skyscraper.info();
+    });
+    </script>
+    <div class="fixed_right close" id="fixed_right">
+    <!-- FIXED_RIGHT -->
+        <h3 class="ir">사이드메뉴</h3>
+        <div class="box">
+            <dl class="info">
+                <dt class="ir">회원정보</dt>
+                
+                <dd class="prs" style="display:none" data-login="Y">
+                    <a href="javascript:void(0);" onclick="overpass.mypage.goGradeInfo({target:'_blank'});" title="회원등급안내 새창">
+                        <strong><img src="http://www.thebanchan.co.kr/fo/images/common/grd_hm_0000009.png" data-src="http://www.thebanchan.co.kr/fo/images/common/grd_hm_" alt="등급" /></strong>
+                        <span><b></b>님</span>
+                    </a>
+                </dd>
+                
+                <dd class="log" style="display:none" data-login="M">
+                    <a href="javascript:void(0);" onclick="overpass.link('JOIN');">
+                        <strong>회원가입</strong>
+                        <span>회원가입을 하고<br />더욱큰 혜택을<br />누리세요!</span>
+                    </a>
+                </dd>
+                
+                <dd class="log"  style="display:none" data-login="N">
+                    <a href="javascript:void(0);" onclick="overpass.isLogin();">
+                        <strong>로그인</strong>
+                        <span>로그인을 하고<br />더욱큰 혜택을<br />누리세요!</span>
+                    </a>
+                </dd>
+                
+                <dd class="dlv">
+                    <a href="javascript:void(0);">
+                        <strong></strong>
+                        <span><b></b>수령가능</span>
+                    </a>
+                </dd>
+                <dd class="num"><a href="javascript:void(0);" onclick="overpass.link('CART');">장바구니<b>0</b></a></dd>
+
+                <dd class="num" style="display:none" data-login="Y"><a href="javascript:void(0);" onclick="overpass.mypage.goCouponList()">쿠폰<b>0장</b></a></dd>
+                <dd class="num" style="display:none" data-login="Y"><a href="javascript:void(0);" onclick="overpass.mypage.goSaveMoney()">적립금<b>0P</b></a></dd>
+
+            </dl>
+            
+            
+            <dl class="view">
+                <dt><a href="javascript:void(0);">최근본제품<em>(<b id="lately_cnt">1</b>)</em></a></dt>
+                <dd class="bn" id="fixed_view">
+                    <div class="cont">
+                        <ul>
+                            <li data-goods_no="0000013574">
+                                <a href="javascript:void(0);" onclick="overpass.goods.goDetail({goods_no :'0000013574', vir_vend_no : 'VV17002724'});">
+                                    <span class="tx"><em>닭다리살데리야끼구이(800g)</em><em><b>10,900</b>원</em></span>
+                                    <span class="img"><img src="http://image.thebanchan.co.kr/upload/C00001/goods/prd/64/849/171109000018849.jpg" alt="닭다리살데리야끼구이(800g)" onerror="this.src='/common/images/common/noimg_64.jpg'"/></span>
+                                </a>
+                                <button type="button" onclick="overpass.goods.delLatelyGoods({goods_no :'0000013574'});"><em class="ir">삭제</em></button>
+                            </li>
+                        </ul>
+                    </div>
+                </dd>
+            </dl>
+
+            
+            <button type="button" class="bt_tgl off"><em class="ir">사이드메뉴 닫기</em></button>
+        </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        fn_fixed_right()
+    })
+    </script>
+    <!--// FIXED_RIGHT -->
+
+
+    <!-- FOOTER -->
+    <div id="footer" class="footer">
+        <div class="fnb">
+            <dl>
+                <dt class="ir">더반찬 소개 및 정책</dt>
+                <dd><a href="javascript:void(0);"><b>개인정보처리방침</b></a></dd>
+                <dd><a href="javascript:void(0);">약관안내</a></dd>
+                <dd><a href="javascript:void(0);">임직원 인증</a></dd>
+                <dd><a href="javascript:void(0);" id="_STAFF_PROMO_BTN">임직원 프로모션</a></dd>
+            </dl>
+        </div>
+        <div class="foot">
+            <div class="cont">
+                <div class="left">
+                    <span class="logo">
+                        <a href="javascript:void(0);">
+                            <img src="http://www.thebanchan.co.kr/fo/images/common/logo_ft.jpg" alt="NO.1 온라인 푸드마켓 - the Banchan" />
+                        </a>
+                    </span>
+                    <dl class="qr">
+                        <dt>QR코드 실행하기</dt>
+                        <dd><img src="http://www.thebanchan.co.kr/fo/images/common/img_qr.jpg" alt="QR코드" /></dd>
+                    </dl>
+                </div>
+                <div class="right">
+                    <dl class="copy">
+                        <dt><img src="http://www.thebanchan.co.kr/fo/images/common/logo_dw.jpg" alt="동원홈푸드" /></dt>
+                        <dd>
+                            본사 : 서울특별시 서초구 마방로 68 (양재동) 동원산업빌딩 13,14층 | 센터 : 서울특별시 금천구 서부샛길 280<br />
+                            상호 : (주)동원홈푸드 대표자 : 신영수 | 사업자등록번호 : 312-81-25280 <a href="javascript:void(0);" title="새창" class="bt n1">사업자정보확인</a><br />
+                            통신판매업신고 : 제2014-서울서초-0311호 | 개인정보관리책임자 : 엄주호<br />
+                            TEL : 1644-6844  FAX : 02-2633-9770 | 이메일 : <a href="mailto:thebanchan@dongwon.com" class="mail">thebanchan@dongwon.com</a><br />
+                        </dd>
+                        <dd>
+                            고객님의 안전거래를 위해 현금 등으로 결제시 LG U+의 구매안전 서비스를 이용하실 수 있습니다.<br/>
+                            <a href="javascript:void(0);" title="새창" class="bt n2">서비스가입사실 확인하기</a>
+                        </dd>
+                        <dd><b>ⓒ theBanchan.</b> All Rights Reserved.</dd>
+                    </dl>
+                    <dl class="cst">
+                        <dt><b>고객센터 & 단체구매문의</b></dt>
+                        <dd><strong>1644-6844</strong></dd>
+                        <dd>평일 9:00~18:00<br/>점심시간 12:00~13:00<br/>(토/일/공휴일은 휴무)</dd>
+                    </dl>
+                    <ul class="bot">
+
+                        <li><img src="http://www.thebanchan.co.kr/fo/images/common/img_bot02.jpg" alt="국세청 현금영수증" /></li>
+                        <li><img src="http://www.thebanchan.co.kr/fo/images/common/img_bot03.jpg" alt="세스코멤버스 가입업체" /></li>
+                        <li><img src="http://www.thebanchan.co.kr/fo/images/common/img_bot04.jpg" alt="생산물배상 책임보험가입" /></li>
+                        <li><img src="http://www.thebanchan.co.kr/fo/images/common/img_bot05.jpg" alt="에스크로 서비스가입" /></li>
+                        <li><img src="http://www.thebanchan.co.kr/fo/images/common/img_bot06.jpg" alt="동원임직원 인증확인" /></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //FOOTER -->
+
+    <!-- BTN_TOP -->
+    <div class="btn_top" id="btn_top">
+        <div>
+            <button type="button" class="top"><em class="ir">화면 맨위로 이동</em></button>
+        </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        fn_btn_top()
+    })
+    </script>
+    <!--// BTN_TOP -->
+
+    <!-- APP LAYER -->
+    <div class="layer_wrap" id="lyr_sp_app">
+        <div class="lyr_box" tabindex="0">
+            <h3 class="tit">더반찬 쇼핑앱</h3>
+            <div class="spApp">
+                <img src="http://www.thebanchan.co.kr/fo/images/common/img_app01.jpg" alt="앱 설치 안내(자세한내용 하단참조)" />
+                <span class="ir">
+                    간편하게! 설치하세요.
+                    알림기능과 모바일 특가제품으로 더욱 편리한 더반찬몰 앱 지금 바로 간편하게! 다운로드 하실 수 있습니다.
+                    1. QR코드를 스캔해서 더반찬 앱을 다운로드 해 주세요. 아래 QR코드를 스캔하시면 더반찬 앱을 다운로드 하실 수 있습니다. Google Play / App Store
+                    2. 휴대전화 번호를 입t력해 주세요. 휴대전화 번호를 입력하시면 앱 다운로드 주소를 문자메세지로 전송해 드립니다.
+                </span>
+                <span class="phn">
+                    <label class="ir" for="phn_tx1">휴대폰번호앞자리입력</label>
+                    <input type="text" id="phn_tx1"/>
+                    <input type="text" id="phn_tx2" title="휴대폰번호 중간자리입력"/>
+                    <input type="text" id="phn_tx3" title="휴대폰번호 뒷자리입력"/>
+                    <button type="button" onclick="overpass.mainfn.sendAppDownloadSms({input_id : 'phn_tx'});"><img src="http://www.thebanchan.co.kr/fo/images/common/bt_app01.jpg" alt="발송하기" /></button>
+                </span>
+            </div>
+            <button type="button" class="close" onclick="unBlockUI('lyr_sp_app');return false;">더반찬 쇼핑앱 레이어 닫기</button>
+        </div>
+    </div>
+    <!-- //APP LAYER -->
+
+    <!-- MAIN_NOTICE_LAYER -->
+    <div class="main_ntc_lyr" id="main_ntc_lyr">
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        var noti_clss_cd = "";
+        var main_staff_yn = "N";
+        if(location.pathname.indexOf("/main/initMain") > -1) {
+            noti_clss_cd = 100;
+            main_staff_yn = "N";
+        } else if(location.pathname.indexOf("/event/initEventAndCoupon") > -1) {
+            noti_clss_cd = 103;
+        } else if(location.pathname.indexOf("/dispctg/initDispCtg") > -1) {
+            noti_clss_cd = 105;
+        } else if(location.pathname.indexOf("/shop/initShop") > -1) {
+            noti_clss_cd = 104;
+        }
+
+        if(noti_clss_cd != ""){
+            overpass.cookie.fnNotiPopList({ type : "p", site_no : '1300001', noti_clss_cd : noti_clss_cd, main_staff_yn: main_staff_yn});
+        }
+    });
+    </script>
+    <!--// MAIN_NOTICE_LAYER -->
+
+    <script type="text/javascript" src="http://www.thebanchan.co.kr/fo/js/ui.js?v=170928.1"></script>
+    <script type="text/javascript">
+    
+    $(document).ready(function(){
+        $('.footer').prepend('<div class="line_bn" style="background-color:#fbecd9;"><a href="javascript:void(0);" onclick="overpass.tracking.link({ openwinyn:&#39;N&#39;, tr_yn:&#39;Y&#39;, banner_kind_cd:&#39;90&#39;, conts_form_cd:&#39;130&#39;, conts_form_dtl_cd:&#39;13010&#39;, conts_divi_cd:&#39;&#39;, conts_dist_no:&#39;&#39;, sale_area_no:&#39;D1705000718&#39;, rel_divi_cd:&#39;20&#39;, rel_no:&#39;171200000005949&#39;, move_cont_no:&#39;&#39;, url:&#39;&#39;, param:&#39;&#39;});"><img src="http://image.thebanchan.co.kr/upload/C00001/dspl/banner/90/263/171200000006263.gif?v=20171211204229" width="1060" height="130" class="" alt="푸터배너_APP다운로드(고정)"/></a></div>');
+    });
+    </script>
+    
+    <noscript>
+        <div style="display:inline;">
+        <   img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/980021363/?guid=ON&amp;script=0"/>
+        </div>
+    </noscript>
+
+    <noscript><img src="http://ngc15.nsm-corp.com/?uid=CF1B41088318154&je=n&" border=0 width=0 height=0></noscript>
+</body>
+</html>
