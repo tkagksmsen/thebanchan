@@ -1,4 +1,4 @@
-##- thebanchan site##
+## thebanchan site##
 
 ### Rolling Banner Tag ###
 ----
