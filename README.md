@@ -1,6 +1,7 @@
 thebanchan site
 
 ### Rolling Banner Tag ###
+----
 
 - PC
 ```html
